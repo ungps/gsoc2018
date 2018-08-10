@@ -1,0 +1,24 @@
+From a75e7208e62b9008524dbb993d692fb8d9604cbe Mon Sep 17 00:00:00 2001
+Message-Id: <cover.1533906169.git.ungureanupaulsebastian@gmail.com>
+From: Paul-Sebastian Ungureanu <ungureanupaulsebastian@gmail.com>
+Date: Fri, 10 Aug 2018 16:02:49 +0300
+Subject: [PATCH v6 0/6] *** SUBJECT HERE ***
+
+*** BLURB HERE ***
+
+Paul-Sebastian Ungureanu (6):
+  stash: implement the "list" command in the builtin
+  stash: convert show to builtin
+  stash: change `git stash show` usage text and documentation
+  stash: refactor `show_stash()` to use the diff API
+  stash: update `git stash show` documentation
+  stash: convert store to builtin
+
+ Documentation/git-stash.txt |   7 +-
+ builtin/stash--helper.c     | 176 ++++++++++++++++++++++++++++++++++
+ git-stash.sh                | 182 +-----------------------------------
+ 3 files changed, 185 insertions(+), 180 deletions(-)
+
+-- 
+2.18.0.573.g56500d98f
+

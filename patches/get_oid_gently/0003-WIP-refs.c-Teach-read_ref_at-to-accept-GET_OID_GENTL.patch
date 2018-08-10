@@ -1,0 +1,33 @@
+From 7e11cd45364c2403fcd2e9cb64c76ecdb92c3d75 Mon Sep 17 00:00:00 2001
+Message-Id: <7e11cd45364c2403fcd2e9cb64c76ecdb92c3d75.1533905060.git.ungureanupaulsebastian@gmail.com>
+In-Reply-To: <cover.1533905060.git.ungureanupaulsebastian@gmail.com>
+References: <cover.1533905060.git.ungureanupaulsebastian@gmail.com>
+From: Paul-Sebastian Ungureanu <ungureanupaulsebastian@gmail.com>
+Date: Sun, 1 Jul 2018 00:23:11 +0300
+Subject: [RFC PATCH 3/6] WIP: refs.c: Teach `read_ref_at()` to accept
+ `GET_OID_GENTLY` flag
+
+This commit introduces a way to call `read_ref_at()` without
+exiting on failure.
+
+Signed-off-by: Paul-Sebastian Ungureanu <ungureanupaulsebastian@gmail.com>
+---
+ refs.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/refs.c b/refs.c
+index 0eb379f93..4a470158e 100644
+--- a/refs.c
++++ b/refs.c
+@@ -932,6 +932,8 @@ int read_ref_at(const char *refname, unsigned int flags, timestamp_t at_time, in
+ 	for_each_reflog_ent_reverse(refname, read_ref_at_ent, &cb);
+ 
+ 	if (!cb.reccnt) {
++		if (flags & GET_OID_GENTLY)
++			return -1;
+ 		if (flags & GET_OID_QUIETLY)
+ 			exit(128);
+ 		else
+-- 
+2.18.0.573.g56500d98f
+

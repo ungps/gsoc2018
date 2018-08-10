@@ -1,0 +1,24 @@
+From 0f49fc90bee5e6a297c49224f1451a7aee4c8635 Mon Sep 17 00:00:00 2001
+Message-Id: <cover.1533906169.git.ungureanupaulsebastian@gmail.com>
+From: Paul-Sebastian Ungureanu <ungureanupaulsebastian@gmail.com>
+Date: Fri, 10 Aug 2018 16:02:49 +0300
+Subject: [PATCH v6 0/4] *** SUBJECT HERE ***
+
+*** BLURB HERE ***
+
+Joel Teichroeb (1):
+  stash: improve option parsing test coverage
+
+Paul-Sebastian Ungureanu (3):
+  sha1-name.c: added 'get_oidf', which acts like 'get_oid'
+  stash: update test cases conform to coding guidelines
+  stash: renamed test cases to be more descriptive
+
+ cache.h          |   1 +
+ sha1-name.c      |  19 ++++++
+ t/t3903-stash.sh | 169 +++++++++++++++++++++++++++++------------------
+ 3 files changed, 123 insertions(+), 66 deletions(-)
+
+-- 
+2.18.0.573.g56500d98f
+

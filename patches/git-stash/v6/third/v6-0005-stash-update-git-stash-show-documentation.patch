@@ -1,0 +1,35 @@
+From dcd10e941418cbf4bbc50719f1f567f4025fe123 Mon Sep 17 00:00:00 2001
+Message-Id: <dcd10e941418cbf4bbc50719f1f567f4025fe123.1533906169.git.ungureanupaulsebastian@gmail.com>
+In-Reply-To: <cover.1533906169.git.ungureanupaulsebastian@gmail.com>
+References: <cover.1533906169.git.ungureanupaulsebastian@gmail.com>
+From: Paul-Sebastian Ungureanu <ungureanupaulsebastian@gmail.com>
+Date: Sat, 23 Jun 2018 17:44:08 +0300
+Subject: [PATCH v6 5/6] stash: update `git stash show` documentation
+
+Add in documentation about the change of behavior regarding
+the `--quiet` option, which was introduced in the last commit.
+(the `--quiet` option does not exit anymore with erorr if it
+is given an empty stash as argument)
+
+Signed-off-by: Paul-Sebastian Ungureanu <ungureanupaulsebastian@gmail.com>
+---
+ Documentation/git-stash.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/Documentation/git-stash.txt b/Documentation/git-stash.txt
+index e31ea7d30..d60ebdb96 100644
+--- a/Documentation/git-stash.txt
++++ b/Documentation/git-stash.txt
+@@ -117,6 +117,9 @@ show [<options>] [<stash>]::
+ 	You can use stash.showStat and/or stash.showPatch config variables
+ 	to change the default behavior.
+ 
++	It accepts any option known to `git diff`, but acts different on
++	`--quiet` option and exit with zero regardless of differences.
++
+ pop [--index] [-q|--quiet] [<stash>]::
+ 
+ 	Remove a single stashed state from the stash list and apply it
+-- 
+2.18.0.573.g56500d98f
+

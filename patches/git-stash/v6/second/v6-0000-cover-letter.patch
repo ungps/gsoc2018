@@ -1,0 +1,26 @@
+From 5d5b05caecc01d8f252ef5f8495549663815ed63 Mon Sep 17 00:00:00 2001
+Message-Id: <cover.1533906169.git.ungureanupaulsebastian@gmail.com>
+From: Paul-Sebastian Ungureanu <ungureanupaulsebastian@gmail.com>
+Date: Fri, 10 Aug 2018 16:02:49 +0300
+Subject: [PATCH v6 0/4] *** SUBJECT HERE ***
+
+*** BLURB HERE ***
+
+Joel Teichroeb (4):
+  stash: convert apply to builtin
+  stash: convert drop and clear to builtin
+  stash: convert branch to builtin
+  stash: convert pop to builtin
+
+ .gitignore              |   1 +
+ Makefile                |   1 +
+ builtin.h               |   1 +
+ builtin/stash--helper.c | 631 ++++++++++++++++++++++++++++++++++++++++
+ git-stash.sh            | 136 +--------
+ git.c                   |   1 +
+ 6 files changed, 643 insertions(+), 128 deletions(-)
+ create mode 100644 builtin/stash--helper.c
+
+-- 
+2.18.0.573.g56500d98f
+
