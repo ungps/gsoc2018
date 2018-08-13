@@ -40,13 +40,13 @@ This is what I have been working on during this summer. It is a series consistin
 Link to every patch (mailing list)
 
  * [01/26: sha1-name.c: added 'get_oidf', which acts like 'get_oid'](https://public-inbox.org/git/03006713a841adf68340f0dcf39ee17c99060eeb.1533753605.git.ungureanupaulsebastian@gmail.com/)
- * [02/26: stash: improve option parsing test coverage](https://public-inbox.org/git/57c8f7ebbd3cf5631bbec51c0cae9cb9978ae2c0.1533753605.git.ungureanupaulsebastian@gmail.com/)
+ * [02/26: stash: improve option parsing test coverage](https://public-inbox.org/git/57c8f7ebbd3cf5631bbec51c0cae9cb9978ae2c0.1533753605.git.ungureanupaulsebastian@gmail.com/) *
  * [03/26: stash: update test cases conform to coding guidelines](https://public-inbox.org/git/b37da07c02064bb2f427196234710021b0c49184.1533753605.git.ungureanupaulsebastian@gmail.com/)
  * [04/26: stash: renamed test cases to be more descriptive](https://public-inbox.org/git/cb70dc2317b8bdbe640a50de7050cb405067c0f0.1533753605.git.ungureanupaulsebastian@gmail.com/)
- * [05/26: stash: convert apply to builtin](https://public-inbox.org/git/7ba9a8515d445d10af36a8a79071af51b90f5aef.1533753605.git.ungureanupaulsebastian@gmail.com/)
- * [06/26: stash: convert drop and clear](https://public-inbox.org/git/6831636969a588833f42530fda29602447085848.1533753605.git.ungureanupaulsebastian@gmail.com/)
- * [07/26: stash: convert branch](https://public-inbox.org/git/ee70cc83b9b57c43672cfa5065d3c6156d089d92.1533753605.git.ungureanupaulsebastian@gmail.com/)
- * [08/26: stash: convert pop](https://public-inbox.org/git/0996e18f410508602525c71e49a0d6614169b77e.1533753605.git.ungureanupaulsebastian@gmail.com/)
+ * [05/26: stash: convert apply to builtin](https://public-inbox.org/git/7ba9a8515d445d10af36a8a79071af51b90f5aef.1533753605.git.ungureanupaulsebastian@gmail.com/) *
+ * [06/26: stash: convert drop and clear](https://public-inbox.org/git/6831636969a588833f42530fda29602447085848.1533753605.git.ungureanupaulsebastian@gmail.com/) *
+ * [07/26: stash: convert branch](https://public-inbox.org/git/ee70cc83b9b57c43672cfa5065d3c6156d089d92.1533753605.git.ungureanupaulsebastian@gmail.com/) *
+ * [08/26: stash: convert pop](https://public-inbox.org/git/0996e18f410508602525c71e49a0d6614169b77e.1533753605.git.ungureanupaulsebastian@gmail.com/) *
  * [09/26: stash: implement the "list" command in the builtin](https://public-inbox.org/git/47556d40a9944e8cc45ba3df8e12c80a1898b160.1533753605.git.ungureanupaulsebastian@gmail.com/)
  * [10/26: stash: convert show to builtin](https://public-inbox.org/git/05246e813c810156c07385052ec59d6dec34623e.1533753605.git.ungureanupaulsebastian@gmail.com/)
  * [11/26: stash: change `git stash show` usage text and documentation](https://public-inbox.org/git/5e477e5a62c3e2cc7066487bf6e0a68c922457a5.1533753605.git.ungureanupaulsebastian@gmail.com/)
@@ -65,6 +65,8 @@ Link to every patch (mailing list)
  * [24/26: stash: optimize `get_untracked_files()` and `check_changes()`](https://public-inbox.org/git/9bde85eacb94db54763aab35efe287c5af7c8316.1533753605.git.ungureanupaulsebastian@gmail.com/)
  * [25/26: stash: replace all `write-tree` child processes with API calls](https://public-inbox.org/git/3b4a3b766598589df30e16cddf175f039eb4e290.1533753605.git.ungureanupaulsebastian@gmail.com/)
  * [26/26: stash: replace all "git apply"](https://public-inbox.org/git/56500d98f9d5daaa5f21a43767885baede86e3a0.1533753605.git.ungureanupaulsebastian@gmail.com/)
+
+*<sub>\* The project was originally started by Joel Teichroeb. During the bonding period, he [agreed](https://public-inbox.org/git/CA+CzEk_qwHs5qUstyFeepzwvCBR=9SvH90+__f-gfxFySETZzQ@mail.gmail.com/) to give me custody of his patches (the ones marked with \*). I independently modified the original patches and developed new ones.</sub>*
 
 Status: *waiting to get reviewed*
 
